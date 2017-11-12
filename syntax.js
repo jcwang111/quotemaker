@@ -11,7 +11,7 @@ var templates = [
     [[3,3], "You are always free to change your mind and chooose a different ",3," or a different ",3,"."],
     [[4], "We ",4," by our very presence."],
     [[2], "Every moment of your life should be spent ",2,"."],
-    [[4], "Your heart is full of ",3,", ready to ",4,"."],
+    [[3,4], "Your heart is full of ",3,", ready to ",4,"."],
     [[3,3], "Give god your ",3,", and he will give you his ",3,"."],
     [[3], "Getting over ",3," is the key to success in your life."],
     [[3], "If you can ",4,", you can do it!"],
