@@ -16,7 +16,7 @@ var templates = [
     [[3], "Getting over ",3," is the key to success in your life."],
     [[3], "If you can ",4,", you can do it!"],
     [[4,3], "Believe you can ",4," and you're halfway to ",3,"."],
-    [[2], "Today is a ",2," day; yesterday is gone."],
+    [[1], "Today is a ",1," day; yesterday is gone."],
     [[3,4], "Every human is powered by their ",3," and their desire to ",4,"."],
     [[3], "Thinking: the talking of the soul with ",3,"."],
     [[3], "If you put your ",3," to something, it is impossible to fail."],
