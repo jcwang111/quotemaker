@@ -10,7 +10,11 @@
     <body>
         <h1>QuoteMaker</h1>
         <h2>Inspiration, one quote at a time.</h2>
-        <p id="quote">Quote Goes Here</p>
+        <p id="quote">Loading... </p>
         <script src="builder.js"></script>
+        <iframe id="Adjectives" src="adjectives/adjectives.txt" onload="loadFile('Adjectives');" style="display: none;"></iframe>
+        <iframe id="Adverbs" src="adverbs/adverbs.txt" onload="loadFile('Adverbs');" style="display: none;"></iframe>
+        <iframe id="Nouns" src="nouns/nouns.txt" onload="loadFile('Nouns');" style="display: none;"></iframe>
+        <iframe id="Verbs" src="verbs/verbs.txt" onload="loadFile('Verbs');" style="display: none;"></iframe>
     </body>
 </html>
