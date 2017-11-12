@@ -1,5 +1,6 @@
 var adjectives, adverbs, nouns, verbs, people;
 var quoteDestination = document.getElementById("quote");
+var authorDestination = document.getElementById("author");
 
 var loadFile = function(name) {
     var file = document.getElementById(name);
@@ -37,7 +38,9 @@ var update = function() {
         var randAdj = Math.floor(Math.random()*adjectives.length);
         var randN = Math.floor(Math.random()*nouns.length);
         var ind_art = a_an(adjectives[randAdj], nouns[randN]);
+	var randP = Math.floor(Math.random()*people.length);
 	quoteDestination.innerHTML = "What " + ind_art + adjectives[randAdj] + " " + nouns[randN] + "!";
+	authorDestination.innerHTML = "-" + "people[randP]";
     }
     
 }
