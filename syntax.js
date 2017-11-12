@@ -5,7 +5,7 @@ var templates = [
     [[3],"A journey of a thousand miles begins with ",5,3,"."],
     [[3],"Change ",5," ",3," and you can change the world!"],
     [[4],"What we ",4,", we become."],
-    [[1],"Success is the direct result of ",1,"."],
+    [[3],"Success is the direct result of ",3,"."],
     [[4,4],"A champion is someone who can ",4," whilst being unable to ",4,"."],
     [[4], "People who ",4," are the ones who succeed."],
     [[3,3], "You are always free to change your mind and choose ",6," different ",3," or ",6," different ",3,"."],
