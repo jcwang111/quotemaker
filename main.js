@@ -40,7 +40,7 @@ var update = function() {
         var randP = Math.floor(Math.random()*people.length);
         authorDestination.innerHTML = "-" + people[randP];
         var randBG = Math.floor(Math.random()*NUM_OF_BACKGROUNDS);
-	document.body.style.backgroundImage = "url('background_pics/pic' + randBG + '.png')";
+        document.body.style.backgroundImage = "url('background_pics/pic" + randBG + ".png')";
         /*
         var randAdj = Math.floor(Math.random()*adjectives.length);
         var randN = Math.floor(Math.random()*nouns.length);
