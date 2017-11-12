@@ -21,7 +21,7 @@ var templates = [
     [[3], "Thinking: the talking of the soul with ",3,"."],
     [[3], "If you put your ",3," to something, it is impossible to fail."],
     [[3], "It is always the ",3," that produces the marvelous."],
-    [[2], "The only journey is ",2,"."],
+    [[1], "The only journey is ",1,"."],
     [[3,3], "From a small ",3," a mighty ",3," may grow."],
     [[5,3], "A #2 pencil and ",8,3," can take you anywhere."]
 ];
