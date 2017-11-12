@@ -12,7 +12,6 @@ var loadFile = function(name) {
     while (data.indexOf("\r") >= 0)
         data = data.replace("\r", "");
     var list = data.split("\n");
-    loadWrapper.childNodes[5].innerHTML += "<br/>" + String(list.length) + " " + name + "...";
     
     //alert("There are " + list.length + " " + name);
     /*
@@ -21,48 +20,54 @@ var loadFile = function(name) {
     }
     */
     
+    var flavorText;
+    
     switch(name) {
         case "Adjectives":
-            adjectives = list; break;
+            adjectives = list; flavorText = "Adjusting"; break;
         case "Adverbs":
-            adverbs = list; break;
+            adverbs = list; flavorText = "Accumulating"; break;
         case "Nouns":
-            nouns = list; break;
+            nouns = list; flavorText = "Naming"; break;
         case "Verbs":
-            verbs = list; break;
+            verbs = list; flavorText = "Validating"; break;
 	case "People":
-            people = list; break;
+            people = list; flavorText = "Greeting"; break;
         default:
             alert("Error loading " + name + ": Unknown List");
     }
+    
+    loadWrapper.childNodes[5].innerHTML += "<br/>" + flavorText + " " + String(list.length) + " " + name + "...";
 }
 
 var update = function() {
     if (adjectives && adverbs && nouns && verbs) {
-        loadWrapper.style.display = "none";
-        contentWrapper.style.display = "block";
-        var randBG = Math.floor(Math.random()*NUM_OF_BACKGROUNDS+1);
         
-        var k = 1;//for (k = 0; k < 3; k++) {
-            var info = makeQuote();
-            console.log(info);
-            quoteDestinations[k].innerHTML = info[info.length-1];
-            var randP = Math.floor(Math.random()*people.length);
-            authorDestinations[k].innerHTML = "- " + people[randP];
-            defineDestinations[k].innerHTML = "Definitions";
-            for (j = 0; j < info.length-1; j++) {
-                defineDestinations[k].innerHTML += " | <a href='https://www.google.com/search?q=" + info[j] + "+definition' target='_blank'>" + info[j] + "</a>";
-            }
-            /*
-            var randAdj = Math.floor(Math.random()*adjectives.length);
-            var randN = Math.floor(Math.random()*nouns.length);
-            var ind_art = a_an(adjectives[randAdj], nouns[randN]);
-            quoteDestination.innerHTML = "What " + ind_art + adjectives[randAdj] + " " + nouns[randN] + "!";
-            */
-        //}
         $(document.body).fadeOut(200,function(){
-            document.body.style.backgroundImage = "url('background_pics/pic" + randBG + ".png')";
-            $(document.body).fadeIn(200);
+            
+            loadWrapper.style.display = "none";
+            contentWrapper.style.display = "block";
+            var randBG = Math.floor(Math.random()*NUM_OF_BACKGROUNDS+1);
+
+            var k = 1;//for (k = 0; k < 3; k++) {
+                var info = makeQuote();
+                console.log(info);
+                quoteDestinations[k].innerHTML = info[info.length-1];
+                var randP = Math.floor(Math.random()*people.length);
+                authorDestinations[k].innerHTML = "- " + people[randP];
+                defineDestinations[k].innerHTML = "Definitions";
+                for (j = 0; j < info.length-1; j++) {
+                    defineDestinations[k].innerHTML += " | <a href='https://www.google.com/search?q=" + info[j] + "+definition' target='_blank'>" + info[j] + "</a>";
+                }
+                /*
+                var randAdj = Math.floor(Math.random()*adjectives.length);
+                var randN = Math.floor(Math.random()*nouns.length);
+                var ind_art = a_an(adjectives[randAdj], nouns[randN]);
+                quoteDestination.innerHTML = "What " + ind_art + adjectives[randAdj] + " " + nouns[randN] + "!";
+                */
+            //}
+                document.body.style.backgroundImage = "url('background_pics/pic" + randBG + ".png')";
+                $(document.body).fadeIn(200);
         });
     }
     
