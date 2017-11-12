@@ -16,13 +16,23 @@ h1 {
     padding-top: 0;
 }
 
-#wrapper {
-    padding: 25px 0;
+#loadwrapper, #contentwrapper {
+    padding: 25px;
     position: fixed;
     top: 50%;
     left: 50%;
     width: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.75);
     box-shadow: 0 0 50px #999999;
+}
+
+#contentwrapper {
+    display: none;
+}
+
+.box {
+    display: inline-block;
+    padding: 0 10px;
+    width: 30%;
 }

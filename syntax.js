@@ -2,8 +2,8 @@ var templates = [
     [[1,3],"What ",5,1," ",3,"!"],
     [[1,3,4],"The journey to becoming ",5,1," ",3," begins with having the will to ",4,"."],
     [[4],8,"!  What do you have to lose!"],
-    [[3],"A journey of a thousand miles begins with ",5,3,"."],
-    [[3],"Change ",5," ",3," and you can change the world!"],
+    [[3],"A journey of a thousand miles begins with ",9,3,"."],
+    [[3],"Change ",9," ",3," and you can change the world!"],
     [[4],"What we ",4,", we become."],
     [[3],"Success is the direct result of ",3,"."],
     [[4,4],"A champion is someone who can ",4," whilst being unable to ",4,"."],
@@ -59,6 +59,17 @@ var verb_cap = function(verb) {
 	return firstLetter + rest;
 }
 	
+var a_an_noun = function(noun) {
+    if (noun[noun.length - 1] == 's') {
+	    return '';
+    } else if (noun[0] == 'a' || noun[0] == 'e' || noun[0] == 'i' || noun[0] == 'o' || noun[0] == 'u' ||
+               noun[0] == 'A' || noun[0] == 'E' || noun[0] == 'I' || noun[0] == 'O' || noun[0] == 'U') {
+	    return 'an ';
+    } else {
+	    return 'a ';
+    }
+}
+
 var makeQuote = function() {
     var tempUse = templates[Math.floor(Math.random()*templates.length)];
     var quote = "";
@@ -80,7 +91,6 @@ var makeQuote = function() {
         }
     }
     var pointer = 0;
-    console.log(randomWords);
     for (j = 1; j < tempUse.length; j++) {
         switch(tempUse[j]) {
             case 1: case 2: case 3: case 4: quote += randomWords[pointer]; pointer++; break;
@@ -88,6 +98,7 @@ var makeQuote = function() {
             case 6: quote += a_ex(randomWords[pointer]); break;
             case 7: quote += verb_plr(randomWords[pointer],randomWords[pointer+1]); break;
             case 8: quote += verb_cap(randomWords[pointer]); pointer++; break;
+            case 9: quote += a_an_noun(randomWords[pointer]); break;
             default: quote += tempUse[j];
         }
     }
