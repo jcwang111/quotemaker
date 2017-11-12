@@ -28,7 +28,7 @@ var verb_plr = function(verb, noun) { //returns the verb with an s after it if t
 var makeQuote = function() {
     var tempUse = [[1,3],"What ",5,1," ",3,"!"]; //Math.floor(Math.random()*tempUse.length);
     var response = "";
-    var randomWords = []
+    var randomWords = [];
     for (i = 0; i < tempUse[0].length; i++) {
         switch(tempUse[0][i]) {
             case 1: randomWords.push(adjectives[Math.floor(Math.random()*adjectives.length)]); break;
