@@ -53,15 +53,11 @@ var verb_plr = function(verb, noun) { //returns the verb with an s after it if t
 	}
 }
 
-var a_an_req = function(noun) { 	//returns the indefinite article using the next word as noun
-    if (noun[0] == 'a' || noun[0] == 'e' || noun[0] == 'i' || noun[0] == 'o' || noun[0] == 'u' ||
-               noun[0] == 'A' || noun[0] == 'E' || noun[0] == 'I' || noun[0] == 'O' || noun[0] == 'U') {
-	    return 'an ';
-    } else {
-	    return 'a ';
-    }
-}
-
+var verb_cap = function(verb) {
+	var firstLetter = verb[0].toUpperCase ();
+	var rest = verb.splice(0,1);
+	return firstLetter + rest;
+	
 var makeQuote = function() {
     var tempUse = templates[Math.floor(Math.random()*templates.length)];
     var quote = "";
