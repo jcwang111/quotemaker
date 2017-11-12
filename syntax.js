@@ -23,7 +23,7 @@ var templates = [
     [[3], "It is always the ",3," that produces the marvelous."],
     [[1], "The only journey is ",1,"."],
     [[3,3], "From a small ",3," a mighty ",3," may grow."],
-    [[5,3], "A #2 pencil and ",8,3," can take you anywhere."]
+    [[3], "A #2 pencil and ",8,3," can take you anywhere."]
 ];
 
 var a_an = function(string, noun){ 	//returns the indefinite article using the next word as string and noun as noun
