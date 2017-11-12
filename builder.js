@@ -34,7 +34,8 @@ var update = function() {
     if (adjectives && adverbs && nouns && verbs) {
         var randAdj = Math.floor(Math.random()*adjectives.length);
         var randN = Math.floor(Math.random()*nouns.length);
-        quoteDestination.innerHTML = "What a(n) " + adjectives[randAdj] + " " + nouns[randN] + "!";
+        var ind_art = a_an(adjectives[randAdj], nouns[randN]);
+	quoteDestination.innerHTML = "What " + ind_art + adjectives[randAdj] + " " + nouns[randN] + "!";
     }
     
 }
@@ -43,9 +44,9 @@ var a_an = function(string, noun){ 	//returns the indefinite article using the n
 	    return '';
     } else if (string[0] == 'a' || string[0] == 'e' || string[0] == 'i' || string[0] == 'o' || string[0] == 'u' ||
                string[0] == 'A' || string[0] == 'B' || string[0] == 'C' || string[0] == 'D' || string[0] == 'E') {
-	    return 'an';
+	    return 'an ';
     } else {
-	    return 'a';
+	    return 'a ';
     }
 }
 
