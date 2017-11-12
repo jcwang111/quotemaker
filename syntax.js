@@ -8,7 +8,7 @@ var templates = [
     [[1],"Success is the direct result of ",1,"."],
     [[4,4],"A champion is someone who can ",4," whilst being unable to ",4,"."],
     [[4], "People who ",4," are the ones who succeed."],
-    [[3,3], "You are always free to change your mind and chooose a different ",3," or a different ",3,"."],
+    [[3,3], "You are always free to change your mind and chooose ",8," different ",3," or ",8," different ",3,"."],
     [[4], "We ",4," by our very presence."],
     [[2], "Every moment of your life should be spent ",2,"."],
     [[3,4], "Your heart is full of ",3,", ready to ",4,"."],
