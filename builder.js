@@ -51,7 +51,7 @@ var a_an = function(string, noun){ 	//returns the indefinite article using the n
 }
 var a_ex = function(noun){ 	//returns an indefinite article depending on the plurality of the noun
     if (noun[noun.length - 1] == 's') {
-	    return ''
+	    return '';
     } 
     else {
 	return 'a ';
