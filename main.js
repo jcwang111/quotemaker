@@ -73,4 +73,4 @@ var update = function() {
     
 }
 
-setInterval(update,6000);
+setInterval(update,8000);
