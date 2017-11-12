@@ -9,7 +9,7 @@ var templates = [
     [[4,4],"A champion is someone who can ",3," whilst being unable to ",3,"."],
     [[4], "People who ",4," are the ones who succeed."],
     [[3,3], "You are always free to change your mind and chooose a different ",3," or a different ",3,"."],
-    [[4], "We",4,"by our very presence."],
+    [[4], "We ",4," by our very presence."],
     [[2], "Every moment of your life should be spent ",2,"."],
     [[4], "Your heart is full of ",3,", ready to ",4,"."],
     [[3,3], "Give god your ",3,", and he will give you his ",3,"."],
