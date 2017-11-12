@@ -14,7 +14,7 @@ var templates = [
     [[3,4], "Your heart is full of ",3,", ready to ",4,"."],
     [[3,3], "Give god your ",3,", and he will give you his ",3,"."],
     [[3], "Getting over ",3," is the key to success in your life."],
-    [[3], "If you can ",4,", you can do it!"],
+    [[4], "If you can ",4,", you can do it!"],
     [[4,3], "Believe you can ",4," and you're halfway to ",3,"."],
     [[1], "Today is a ",1," day; yesterday is gone."],
     [[3,4], "Every human is powered by their ",3," and their desire to ",4,"."],
