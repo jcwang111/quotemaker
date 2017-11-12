@@ -1,31 +1,3 @@
-var templates = [
-    [[1,3],"What ",5,1," ",3,"!"],
-    [[1,3,4],"The journey to becoming ",5,1," ",3," begins with having the will to ",4,"."],
-    [[4],8,"!  What do you have to lose!"],
-    [[3],"A journey of a thousand miles begins with ",9,3,"."],
-    [[3],"Change ",9," ",3," and you can change the world!"],
-    [[4],"What we ",4,", we become."],
-    [[3],"Success is the direct result of ",3,"."],
-    [[4,4],"A champion is someone who can ",4," whilst being unable to ",4,"."],
-    [[4], "People who ",4," are the ones who succeed."],
-    [[3,3], "You are always free to change your mind and choose ",6," different ",3," or ",6," different ",3,"."],
-    [[4], "We ",4," by our very presence."],
-    [[2], "Every moment of your life should be spent ",2,"."],
-    [[3,4], "Your heart is full of ",3,", ready to ",4,"."],
-    [[3,3], "Give god your ",3,", and he will give you his ",3,"."],
-    [[3], "Getting over ",3," is the key to success in your life."],
-    [[4], "If you can ",4,", you can do it!"],
-    [[4,3], "Believe you can ",4," and you're halfway to ",3,"."],
-    [[1], "Today is a ",1," day; yesterday is gone."],
-    [[3,4], "Every human is powered by their ",3," and their desire to ",4,"."],
-    [[3], "Thinking: the talking of the soul with ",3,"."],
-    [[3], "If you put your ",3," to something, it is impossible to fail."],
-    [[3], "It is always the ",3," that produces the marvelous."],
-    [[1], "The only journey is ",1,"."],
-    [[3,3], "From ",6,"small ",3,", ",6,"mighty ",3," may grow."],
-    [[3], "A #2 pencil and ",6,3," can take you anywhere."]
-];
-
 var a_an = function(string, noun){ 	//returns the indefinite article using the next word as string and noun as noun
     if (noun[noun.length - 1] == 's') {
 	    return '';
