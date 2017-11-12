@@ -1,95 +1,95 @@
-21 Napoleon
-41 William Shakespeare
-51 Abraham Lincoln
-61 George Washington
-81 Aristotle
-91 Alexander the Great
-10 Thomas Jefferson
-11 Henry VIII of England
-12 Charles Darwin
-13 Elizabeth I of England
-14 Karl Marx
-15 Julius Caesar
-16 Queen Victoria
-17 Martin Luther
-19 Albert Einstein
-20 Christopher Columbus
-21 Isaac Newton
-22 Charlemagne
-23 Theodore Roosevelt
-24 Wolfgang Amadeus Mozart
-25 Plato
-26 Louis XIV of France
-27 Ludwig van Beethoven
-28 Ulysses S. Grant
-29 Leonardo da Vinci
-30 Augustus
-31 Carl Linnaeus
-32 Ronald Reagan
-33 Charles Dickens
-34 Paul the Apostle
-35 Benjamin Franklin
-36 George W. Bush
-37 Winston Churchill
-38 Genghis Khan
-39 Charles I of England
-40 Thomas Edison
-41 James I of England
-42 Friedrich Nietzsche
-43 Franklin D. Roosevelt
-44 Sigmund Freud
-45 Alexander Hamilton
-46 Mohandas Karamchand Gandhi
-47 Woodrow Wilson
-48 Johann Sebastian Bach
-49 Galileo Galilei
-50 Oliver Cromwell
-51 James Madison
-52 Gautama Buddha
-53 Mark Twain
-54 Edgar Allan Poe
-55 Joseph Smith, Jr.
-56 Adam Smith
-57 David, King of Israel
-58 George III of the United Kingdom
-59 Immanuel Kant
-60 James Cook
-61 John Adams
-62 Richard Wagner
-63 Pyotr Ilyich Tchaikovsky
-64 Voltaire
-65 Saint Peter
-66 Andrew Jackson
-67 Constantine the Great
-68 Socrates
-69 Elvis Presley
-70 William the Conqueror
-71 John F. Kennedy
-72 Augustine of Hippo
-73 Vincent van Gogh
-74 Nicolaus Copernicus
-75 Vladimir Lenin
-76 Robert E. Lee
-77 Oscar Wilde
-78 Charles II of England
-79 Cicero
-80 Jean-Jacques Rousseau
-81 Francis Bacon
-82 Richard Nixon
-83 Louis XVI of France
-84 Charles V, Holy Roman Emperor
-85 King Arthur
-86 Michelangelo
-87 Philip II of Spain
-88 Johann Wolfgang von Goethe
-90 Thomas Aquinas
-91 Pope John Paul II
-92 René Descartes
-93 Nikola Tesla
-94 Harry S. Truman
-95 Joan of Arc
-96 Dante Alighieri
-97 Otto von Bismarck
-98 Grover Cleveland
-99 John Calvin
-10 John Locke
+Napoleon
+William Shakespeare
+Abraham Lincoln
+George Washington
+Aristotle
+Alexander the Great
+Thomas Jefferson
+Henry VIII of England
+Charles Darwin
+Elizabeth I of England
+Karl Marx
+Julius Caesar
+Queen Victoria
+Martin Luther
+Albert Einstein
+Christopher Columbus
+Isaac Newton
+Charlemagne
+Theodore Roosevelt
+Wolfgang Amadeus Mozart
+Plato
+Louis XIV of France
+Ludwig van Beethoven
+Ulysses S. Grant
+Leonardo da Vinci
+Augustus
+Carl Linnaeus
+Ronald Reagan
+Charles Dickens
+Paul the Apostle
+Benjamin Franklin
+George W. Bush
+Winston Churchill
+Genghis Khan
+Charles I of England
+Thomas Edison
+James I of England
+Friedrich Nietzsche
+Franklin D. Roosevelt
+Sigmund Freud
+Alexander Hamilton
+Mohandas Karamchand Gandhi
+Woodrow Wilson
+Johann Sebastian Bach
+Galileo Galilei
+Oliver Cromwell
+James Madison
+Gautama Buddha
+Mark Twain
+Edgar Allan Poe
+Joseph Smith, Jr.
+Adam Smith
+David, King of Israel
+George III of the United Kingdom
+Immanuel Kant
+James Cook
+John Adams
+Richard Wagner
+Pyotr Ilyich Tchaikovsky
+Voltaire
+Saint Peter
+Andrew Jackson
+Constantine the Great
+Socrates
+Elvis Presley
+William the Conqueror
+John F. Kennedy
+Augustine of Hippo
+Vincent van Gogh
+Nicolaus Copernicus
+Vladimir Lenin
+Robert E. Lee
+Oscar Wilde
+Charles II of England
+Cicero
+Jean-Jacques Rousseau
+Francis Bacon
+Richard Nixon
+Louis XVI of France
+Charles V, Holy Roman Emperor
+King Arthur
+Michelangelo
+Philip II of Spain
+Johann Wolfgang von Goethe
+Thomas Aquinas
+Pope John Paul II
+René Descartes
+Nikola Tesla
+Harry S. Truman
+Joan of Arc
+Dante Alighieri
+Otto von Bismarck
+Grover Cleveland
+John Calvin
+John Locke
