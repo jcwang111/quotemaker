@@ -40,7 +40,7 @@ var update = function() {
         var ind_art = a_an(adjectives[randAdj], nouns[randN]);
 	var randP = Math.floor(Math.random()*people.length);
 	quoteDestination.innerHTML = "What " + ind_art + adjectives[randAdj] + " " + nouns[randN] + "!";
-	authorDestination.innerHTML = "-" + "people[randP]";
+	authorDestination.innerHTML = "-" + people[randP];
     }
     
 }
