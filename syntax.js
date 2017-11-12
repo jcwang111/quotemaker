@@ -1,7 +1,7 @@
 var templates = [
     [[1,3],"What ",5,1," ",3,"!"],
     [[1,3,4],"The journey to becoming ",5,1," ",3," begins with having the will to ",4,"."],
-    [[4],4,"!  What do you have to lose!"],
+    [[4],8,"!  What do you have to lose!"],
     [[3],"A journey of a thousand miles begins with ",5,3,"."],
     [[3],"Change ",5," ",3," and you can change the world!"],
     [[4],"What we ",4,", we become."],
@@ -54,9 +54,10 @@ var verb_plr = function(verb, noun) { //returns the verb with an s after it if t
 }
 
 var verb_cap = function(verb) {
-	var firstLetter = verb[0].toUpperCase ();
-	var rest = verb.splice(0,1);
+	var firstLetter = verb[0].toUpperCase();
+	var rest = verb.slice(1,verb.length);
 	return firstLetter + rest;
+}
 	
 var makeQuote = function() {
     var tempUse = templates[Math.floor(Math.random()*templates.length)];
@@ -86,7 +87,7 @@ var makeQuote = function() {
             case 5: quote += a_an(randomWords[pointer],randomWords[pointer+1]); break;
             case 6: quote += a_ex(randomWords[pointer]); break;
             case 7: quote += verb_plr(randomWords[pointer],randomWords[pointer+1]); break;
-            case 8: quote += a_an_req(randomWords[pointer]); break;
+            case 8: quote += verb_cap(randomWords[pointer]); pointer++; break;
             default: quote += tempUse[j];
         }
     }
