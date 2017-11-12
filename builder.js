@@ -39,14 +39,14 @@ var update = function() {
     
 }
 var a_an = function(string, noun){ 	//returns the indefinite article using the next word as string and noun as noun
-	if (noun[noun.length - 1] == 's')
-	{
-	    return '';}
-	else if (string[0] == 'a' || string[0] == 'e' || string[0] == 'i' || string[0] == 'o' || string[0] == 'u' || 
-string[0] == 'A' || string[0] == 'B' || string[0] == 'C' || string[0] == 'D' || string[0] == 'E'){
-	    return 'an';}
-	else{
-	    return 'a';}
+    if (noun[noun.length - 1] == 's') {
+	    return '';
+    } else if (string[0] == 'a' || string[0] == 'e' || string[0] == 'i' || string[0] == 'o' || string[0] == 'u' ||
+               string[0] == 'A' || string[0] == 'B' || string[0] == 'C' || string[0] == 'D' || string[0] == 'E') {
+	    return 'an';
+    } else {
+	    return 'a';
+    }
 }
 
-setInterval(update,1000);
+setInterval(update,5000);
