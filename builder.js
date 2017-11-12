@@ -1,4 +1,4 @@
-var adjectives, adverbs, nouns, verbs;
+var adjectives, adverbs, nouns, verbs, people;
 var quoteDestination = document.getElementById("quote");
 
 var loadFile = function(name) {
@@ -25,6 +25,8 @@ var loadFile = function(name) {
             nouns = list; break;
         case "Verbs":
             verbs = list; break;
+	case "People":
+            people = list; break;
         default:
             alert("Error loading " + name + ": Unknown List");
     }
