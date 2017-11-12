@@ -64,7 +64,7 @@ var a_an_req = function(noun) { 	//returns the indefinite article using the next
 
 var makeQuote = function() {
     var tempUse = templates[Math.floor(Math.random()*templates.length)];
-    var response = "";
+    var quote = "";
     var randomWords = [];
     for (i = 0; i < tempUse[0].length; i++) {
         switch(tempUse[0][i]) {
@@ -86,13 +86,15 @@ var makeQuote = function() {
     console.log(randomWords);
     for (j = 1; j < tempUse.length; j++) {
         switch(tempUse[j]) {
-            case 1: case 2: case 3: case 4: response += randomWords[pointer]; pointer++; break;
-            case 5: response += a_an(randomWords[pointer],randomWords[pointer+1]); break;
-            case 6: response += a_ex(randomWords[pointer]); break;
-            case 7: response += verb_plr(randomWords[pointer],randomWords[pointer+1]); break;
-            case 8: response += a_an_req(randomWords[pointer]); break;
-            default: response += tempUse[j];
+            case 1: case 2: case 3: case 4: quote += randomWords[pointer]; pointer++; break;
+            case 5: quote += a_an(randomWords[pointer],randomWords[pointer+1]); break;
+            case 6: quote += a_ex(randomWords[pointer]); break;
+            case 7: quote += verb_plr(randomWords[pointer],randomWords[pointer+1]); break;
+            case 8: quote += a_an_req(randomWords[pointer]); break;
+            default: quote += tempUse[j];
         }
     }
+    var response = randomWords;
+    response.push(quote);
     return response;
 }
