@@ -57,5 +57,12 @@ var a_ex = function(noun){ 	//returns an indefinite article depending on the plu
 	return 'a ';
     }
 }
-
+var verb_plr = function(verb, noun){ //returns the verb with an s after it if the subject is singular
+	if (noun[noun.length-1] != 's'){
+		return verb + 's';
+	}
+	else{
+		return verb;
+	}
+}
 setInterval(update,5000);
