@@ -2,13 +2,13 @@ var templates = [
     [[1,3],"What ",5,1," ",3,"!"],
     [[1,3,4],"The journey to becoming ",5,1," ",3," begins with having the will to ",4,"."],
     [[4],4,"!  What do you have to lose!"],
-    [[3],"A journey of a thousand miles begins with a single ",3,"."],
-    [[3],"Change ",8," ",3," and you can change the world!"],
+    [[3],"A journey of a thousand miles begins with ",5,3,"."],
+    [[3],"Change ",5," ",3," and you can change the world!"],
     [[4],"What we ",4,", we become."],
     [[1],"Success is the direct result of ",1,"."],
     [[4,4],"A champion is someone who can ",4," whilst being unable to ",4,"."],
     [[4], "People who ",4," are the ones who succeed."],
-    [[3,3], "You are always free to change your mind and chooose ",8," different ",3," or ",8," different ",3,"."],
+    [[3,3], "You are always free to change your mind and choose ",6," different ",3," or ",6," different ",3,"."],
     [[4], "We ",4," by our very presence."],
     [[2], "Every moment of your life should be spent ",2,"."],
     [[3,4], "Your heart is full of ",3,", ready to ",4,"."],
@@ -71,7 +71,14 @@ var makeQuote = function() {
             case 1: randomWords.push(adjectives[Math.floor(Math.random()*adjectives.length)]); break;
             case 2: randomWords.push(adverbs[Math.floor(Math.random()*adverbs.length)]); break;
             case 3: randomWords.push(nouns[Math.floor(Math.random()*nouns.length)]); break;
-            case 4: randomWords.push(verbs[Math.floor(Math.random()*verbs.length)]); break;
+            case 4: 
+                var verb;
+                do {
+                    verb = verbs[Math.floor(Math.random()*verbs.length+1)];
+                } while (verb[verb.length-1] == 'd' || verb[verb.length-1] == 's' || 
+                        (verb[verb.length-3] == 'i' && verb[verb.length-2] == 'n' && verb[verb.length-1] == 'g'))
+                randomWords.push(verb);
+                break;
             default: console.log("Wrong Expression (Assign)");
         }
     }
