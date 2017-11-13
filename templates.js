@@ -1,7 +1,7 @@
 var templates = [
     [[1,3],"What ",5,1," ",3,"!"],
     [[1,3,4],"The journey to becoming ",5,1," ",3," begins with having the will to ",4,"."],
-    [[4],8,"!  What do you have to lose!"],
+    [[4],8,"!  What do you have to lose?"],
     [[3],"A journey of a thousand miles begins with ",9,3,"."],
     [[3],"Change ",9," ",3," and you can change the world!"],
     [[4],"What we ",4,", we become."],
